@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-dark-slate bg-white antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-dark-slate;
+  }
+  
+  a {
+    @apply text-trust-blue hover:underline transition-colors;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-cta-orange text-white font-semibold py-3 px-6 rounded-lg 
+           hover:bg-orange-600 active:bg-orange-700 transition-colors
+           shadow-md hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-trust-blue text-white font-medium py-2 px-4 rounded-lg
+           hover:bg-blue-700 transition-colors;
+  }
+  
+  .prose-review {
+    @apply text-dark-slate leading-relaxed;
+  }
+  
+  .prose-review h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-dark-slate;
+  }
+  
+  .prose-review h3 {
+    @apply text-xl font-semibold mt-6 mb-3 text-dark-slate;
+  }
+  
+  .prose-review p {
+    @apply mb-4 text-base leading-7;
+  }
+  
+  .prose-review ul, .prose-review ol {
+    @apply mb-4 pl-6;
+  }
+  
+  .prose-review li {
+    @apply mb-2;
+  }
+  
+  .prose-review strong {
+    @apply font-semibold text-dark-slate;
+  }
+}
