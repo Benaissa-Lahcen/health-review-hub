@@ -32,7 +32,7 @@ const demoReview = {
         'Results may vary between individuals',
         'Premium pricing compared to basic supplements',
     ],
-    affiliateUrl: '#affiliate-link',
+    affiliateUrl: 'https://8a315svzv0-apy7h6ell37s695.hop.clickbank.net',
     publishedAt: '2026-01-15',
     content: `
 ## What is Sumatra Slim Belly Tonic?
