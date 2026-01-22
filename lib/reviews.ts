@@ -7,6 +7,7 @@ export interface ReviewFrontmatter {
     slug: string;
     excerpt: string;
     thumbnail: string;
+    productImage?: string;
     rating: number;
     videoId?: string;
     verdict: 'recommended' | 'not-recommended' | 'mixed';

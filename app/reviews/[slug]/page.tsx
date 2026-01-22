@@ -199,6 +199,34 @@ export default async function ReviewPage({ params }: PageProps) {
                     </div>
                 </section>
 
+                {/* Product Image Section */}
+                {review.thumbnail && (
+                    <section className="py-6">
+                        <div className="container-main">
+                            <div className="flex justify-center">
+                                <div className="bg-white rounded-xl shadow-lg p-6 max-w-md">
+                                    <img
+                                        src={review.thumbnail}
+                                        alt={review.title}
+                                        className="w-full h-auto rounded-lg object-cover"
+                                        loading="lazy"
+                                    />
+                                    <div className="mt-4 text-center">
+                                        <a
+                                            href={review.affiliateUrl}
+                                            target="_blank"
+                                            rel="noopener noreferrer nofollow"
+                                            className="btn-primary inline-block px-6 py-3 no-underline"
+                                        >
+                                            Check Price & Availability
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                )}
+
                 {/* Verdict Section */}
                 <section className="py-8">
                     <div className="container-main">
