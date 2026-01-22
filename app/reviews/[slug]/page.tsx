@@ -274,6 +274,8 @@ export default async function ReviewPage({ params }: PageProps) {
 // Simple markdown to HTML converter for demo
 function convertMarkdownToHtml(markdown: string): string {
     return markdown
+        // Convert markdown links [text](url) to HTML anchor tags
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer nofollow" class="text-trust-blue font-semibold hover:underline">$1</a>')
         .replace(/^### (.*$)/gm, '<h3>$1</h3>')
         .replace(/^## (.*$)/gm, '<h2>$1</h2>')
         .replace(/^# (.*$)/gm, '<h1>$1</h1>')
