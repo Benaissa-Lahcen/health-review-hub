@@ -3,16 +3,16 @@ import './globals.css';
 
 export const metadata: Metadata = {
     title: {
-        default: 'HealthDaily - Honest Health Supplement Reviews',
-        template: '%s | HealthDaily',
+        default: 'reviewdotcom.com - Honest Health Supplement Reviews',
+        template: '%s | reviewdotcom.com',
     },
     description: 'Unbiased, science-backed reviews of health supplements. No hype, just honest analysis to help you make informed decisions.',
     keywords: ['health supplements', 'supplement reviews', 'vitamins', 'wellness', 'nutrition'],
-    authors: [{ name: 'HealthDaily Team' }],
+    authors: [{ name: 'reviewdotcom.com Team' }],
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        siteName: 'HealthDaily',
+        siteName: 'reviewdotcom.com',
     },
     robots: {
         index: true,

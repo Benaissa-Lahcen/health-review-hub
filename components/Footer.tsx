@@ -10,10 +10,10 @@ export default function Footer() {
                     {/* Logo & Copyright */}
                     <div className="text-center md:text-left">
                         <Link href="/" className="text-xl font-bold text-dark-slate no-underline">
-                            Health<span className="text-trust-blue">Daily</span>
+                            review<span className="text-trust-blue">dotcom</span><span className="text-gray-400">.com</span>
                         </Link>
                         <p className="text-sm text-gray-500 mt-1">
-                            © {currentYear} HealthDaily. All rights reserved.
+                            © {currentYear} reviewdotcom.com. All rights reserved.
                         </p>
                     </div>
 

@@ -37,7 +37,7 @@ export function generateReviewSchema(review: ReviewFrontmatter, siteUrl: string 
             },
             author: {
                 '@type': 'Organization',
-                name: 'HealthDaily',
+                name: 'reviewdotcom.com',
             },
             reviewBody: review.excerpt,
         },
@@ -64,12 +64,12 @@ export function generateWebsiteSchema(siteUrl: string = '') {
     return {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'HealthDaily',
-        url: siteUrl || 'https://healthdaily.com',
+        name: 'reviewdotcom.com',
+        url: siteUrl || 'https://reviewdotcom.com',
         description: 'Honest, science-backed reviews of health supplements.',
         publisher: {
             '@type': 'Organization',
-            name: 'HealthDaily',
+            name: 'reviewdotcom.com',
         },
     };
 }

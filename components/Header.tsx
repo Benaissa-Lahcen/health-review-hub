@@ -9,8 +9,9 @@ export default function Header() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-1 no-underline">
-                        <span className="text-2xl font-bold text-dark-slate">Health</span>
-                        <span className="text-2xl font-bold text-trust-blue">Daily</span>
+                        <span className="text-2xl font-bold text-dark-slate">review</span>
+                        <span className="text-2xl font-bold text-trust-blue">dotcom</span>
+                        <span className="text-xl text-gray-400">.com</span>
                     </Link>
 
                     {/* Navigation */}
